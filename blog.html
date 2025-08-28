@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prince Raj IoT — Blog</title>
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,600,700&display=swap" rel="stylesheet">
+  <style>
+    body { margin:0; font-family:'Inter',sans-serif; background:#0f172a; color:#f7fafd; }
+    header { background:linear-gradient(90deg,#00e5ff,#8a2be2); padding:1rem 2rem; display:flex; justify-content:space-between; align-items:center; position:sticky; top:0; z-index:100; box-shadow:0 4px 20px rgba(0,0,0,.3); }
+    header .brand { font-weight:700; font-size:1.4rem; letter-spacing:.5px; color:#fff; }
+    nav a { margin:0 .9rem; text-decoration:none; color:#fff; font-weight:600; transition:color .3s, text-shadow .3s; }
+    nav a:hover { color:#00e5ff; text-shadow:0 0 8px #00e5ff; }
+    .blogs { padding:3rem 1.5rem; max-width:1200px; margin:0 auto; }
+    .blogs h2 {
+      text-align:center;
+      margin-bottom:2rem;
+      font-size:2.2rem;
+      background:linear-gradient(90deg,#00e5ff,#8a2be2);
+      -webkit-background-clip:text;
+      background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+    .blog-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:1.8rem; }
+    .blog-card { background:#1e293b; border-radius:16px; overflow:hidden; box-shadow:0 10px 28px rgba(0,0,0,.35); transition:transform .3s, box-shadow .3s; }
+    .blog-card:hover { transform:translateY(-6px) scale(1.02); box-shadow:0 14px 36px rgba(0,0,0,.45),0 0 20px rgba(0,229,255,.3); }
+    .blog-card img { width:100%; height:200px; object-fit:cover; }
+    .blog-card div { padding:1.2rem; }
+    .blog-card h3 { margin:0 0 .6rem; font-size:1.3rem; color:#7cf7ff; }
+    .blog-card p { color:#b0c4d6; font-size:.98rem; line-height:1.6; }
+    footer { text-align:center; padding:1.6rem; background:#1a2230; color:#b0c4d6; margin-top:3rem; border-top:1px solid rgba(255,255,255,.08); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">Prince Raj IoT — Smart Boards</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="blogs">
+      <h2 style="text-align:center;margin-bottom:1.5rem;">Latest Blogs</h2>
+      <div class="blog-grid">
+        <div class="blog-card">
+          <img src="https://media.licdn.com/dms/image/v2/D5612AQH-FJVvwumWGw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1692513502628?e=2147483647&v=beta&t=svO7QqYoqk6phdfxMeOv1PMak10Y1zeAYUZhWaket-k" alt="Smart Homes Future">
+          <div>
+            <h3>Smart Homes: The Future of Living</h3>
+            <p>Smart homes are the future because they offer increased convenience, efficiency, and security. With AI, they will become more predictive and adaptive, improving everyday life.</p>
+          </div>
+        </div>
+        <div class="blog-card">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="IoT Security">
+          <div>
+            <h3>IoT and Security</h3>
+            <p>IoT security is crucial to protect devices, networks, and data from cyber threats. Learn best practices like changing default passwords, updating firmware, and using encryption.</p>
+          </div>
+        </div>
+        <div class="blog-card">
+          <img src="https://miro.medium.com/v2/resize:fit:920/1*gTEger7u_Vf1aiLcH3UiGA.jpeg" alt="IoT Energy Saving">
+          <div>
+            <h3>Saving Energy with IoT</h3>
+            <p>Saving energy with the Internet of Things (IoT) involves using smart sensors and devices to collect real-time data on energy consumption and then automatically adjust systems like lighting, heating, and cooling. This optimizes usage, reduces waste, and lowers costs — delivering financial and environmental benefits for homes, buildings, and smart cities. Key applications include smart thermostats, smart lighting, appliances, and data-driven energy management for smart grids.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Prince Raj IoT • Prototype Store</p>
+  </footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prince Raj IoT — About</title>
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,600,700&display=swap" rel="stylesheet">
+  <style>
+    body { margin:0; font-family:'Inter',sans-serif; background:#0f172a; color:#f7fafd; }
+    header { background:linear-gradient(90deg,#00e5ff,#8a2be2); padding:1rem 2rem; display:flex; justify-content:space-between; align-items:center; position:sticky; top:0; z-index:100; box-shadow:0 4px 20px rgba(0,0,0,.3); }
+    header .brand { font-weight:700; font-size:1.4rem; letter-spacing:.5px; color:#fff; }
+    nav a { margin:0 .9rem; text-decoration:none; color:#fff; font-weight:600; transition:color .3s, text-shadow .3s; }
+    nav a:hover { color:#00e5ff; text-shadow:0 0 8px #00e5ff; }
+    main { padding:3rem 1.5rem; max-width:1000px; margin:0 auto; }
+    .founder { text-align:center; background:#1e293b; padding:3rem 2rem; border-radius:16px; box-shadow:0 10px 30px rgba(0,0,0,.35); }
+    .founder img { width:140px; height:140px; border-radius:50%; margin-bottom:1.2rem; box-shadow:0 6px 20px rgba(0,229,255,.4); border:3px solid #00e5ff; }
+    .founder h2 { margin:.5rem 0 .2rem; font-size:2rem; }
+    .founder h4 { margin:0 0 1rem; color:#7cf7ff; font-size:1.2rem; }
+    .founder h3 { margin-top:1.5rem; font-size:1.6rem; background:linear-gradient(90deg,#00e5ff,#8a2be2); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; }
+    .founder p { color:#b0c4d6; line-height:1.7; font-size:1.05rem; margin-top:.8rem; }
+    footer { text-align:center; padding:1.6rem; background:#1a2230; color:#b0c4d6; margin-top:3rem; border-top:1px solid rgba(255,255,255,.08); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">Prince Raj IoT — Smart Boards</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="founder">
+      <img src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" alt="Founder">
+      <h2>Prince Raj</h2>
+      <h4>Founder & Visionary</h4>
+      <h3>Our Mission & Vision</h3>
+      <p>Our mission is to empower households with smart, affordable, and sustainable IoT automation solutions. Our vision is to create a connected future where technology makes life effortless, secure, and energy efficient for everyone.</p>
+      <p>Prince Raj is passionate about automation, AI, and creating smart solutions for everyday life. With a vision of making homes more efficient, he brings together technology and creativity to deliver powerful yet easy-to-use boards.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Prince Raj IoT • Prototype Store</p>
+  </footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
